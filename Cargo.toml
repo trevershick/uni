@@ -1,0 +1,11 @@
+[package]
+name = "uni"
+version = "0.1.0"
+authors = ["Trever Shick <trever.shick@tanium.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hex = "0.3.2"
+simple-error = "0.2.1"
