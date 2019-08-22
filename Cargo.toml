@@ -9,3 +9,4 @@ edition = "2018"
 [dependencies]
 hex = "0.3.2"
 simple-error = "0.2.1"
+clap = "2.33.0"
