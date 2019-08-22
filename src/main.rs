@@ -15,7 +15,7 @@ fn utf8_to_utf16(unicode_bytes: Vec<u8>) -> Result<String, Box<dyn Error>> {
         bail!("only handle arrays of 2");
     }
 
-    let mut wide: u16 = unicode_bytes[0] as u16;
+    let mut wide = unicode_bytes[0] as u16;
     wide <<= 8;
     wide += unicode_bytes[1] as u16;
     return match String::from_utf16(&[wide]) {
