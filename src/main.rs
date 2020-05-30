@@ -45,10 +45,10 @@ fn main() {
         };
     }
 
+    for b in &bad {
+        eprintln!("bad code {}", b);
+    }
     if bad.len() > 0 {
-        for b in bad {
-            eprintln!("bad code {}", b);
-        }
         exit(1)
     }
 }
